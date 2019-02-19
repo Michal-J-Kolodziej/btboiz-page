@@ -1,0 +1,137 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Mobile -> Pc */
+
+/* First section style */
+section.nsp-container-stacked.home-container {
+}
+
+/* Home header */
+div.home-header-container {
+    height: 15%;
+    background-color: #3A3A3A;
+    padding: 0 20px 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.home-header-container div.logo {
+    height: 60px;
+    width: 60px;
+    background-image: url('img/logoBoiz.svg');
+    background-size: cover;
+}
+
+div.home-header-container div.name {
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
+    padding: 5px;
+}
+
+div.home-header-container div.name::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255, 161, 53, 0.5);
+}
+
+div.home-header-container div.lang {
+    width: 40px;
+    height: 40px;
+    background-image: url('img/lang.svg');
+    background-size: cover;
+}
+
+/* ------- */
+/* Home center  (photo) */
+
+div.home-photo-container {
+    position: relative;
+    height: 70%;
+    background-image: url('img/home-photo.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+div.home-photo-container div.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #ECECEC;
+}
+
+/* -------- */
+/* Home footer */
+
+div.home-footer-container {
+    height: 15%;
+    background-color: #E3E3E3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 5px 0;
+}
+
+div.home-footer-container div.nav-container {
+    display: flex;
+    flex-direction: row;
+    min-width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.home-footer-container div.nav-container div.nav-text {
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+div.home-footer-container div.nav-container div.nav-line {
+    height: 80%;
+    width: 2px;
+    background-color: #3A3A3A;
+    transform-origin: 50% 50%;
+    transform: rotate(25deg);
+}
+
+div.home-footer-container div.scroll-down {
+    position: relative;
+    box-sizing: border-box;
+    height: 45px;
+    width: 20px;
+    margin-top: 10px;
+    border: 3px solid #FFA135;
+    border-radius: 50px;
+}
+
+div.home-footer-container div.scroll-down::after {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+    content: '';
+    width: 60%;
+    height: 40%;
+    background-color: #FFA135;
+    border-radius: 50px;
+}
+
+/* ========= */

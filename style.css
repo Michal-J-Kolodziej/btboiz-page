@@ -293,5 +293,341 @@ div.home-footer-container div.scroll-down::after {
         cursor: pointer;
     }
 }
+/* TODO: */
+/* 
+    klikniecie na nava powoduje przejscie do danej sekcji, klikniecie na logo - przejscie do home, klikniecie na 'scrolla' na dole - przejscie do drugiej sekcji
+*/
+/* ====================================================================== */
+/*  Second section */
 
-/* ========= */
+section.product-container {
+    background-color: #EEEEEE;
+}
+
+/* Product header */
+
+div.product-header {
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 5px 0;
+}
+
+/* Product img */
+
+div.product-img {
+    min-width: 320px;
+    max-height: 30%;
+    margin: 0;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    /* overflow: hidden; */
+    z-index: -1;
+    margin-bottom: 40px;
+}
+
+div.product-img img {
+    width: 100%;
+}
+
+/* Product description */
+
+div.product-description {
+    width: 90%;
+    padding: 0 10px;
+    color: #636268;
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+/* Product features */
+
+div.product-features-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.product-features-container div.product-features {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #636268;
+}
+
+div.product-spec {
+    display: none;
+    color: #636268;
+}
+
+@media (min-height: 600px) and (orientation: portrait) {
+    div.product-header {
+        font-size: 4.5rem;
+    }
+
+    div.product-description {
+        font-size: 1.4rem;
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-height: 650px) and (orientation: portrait) {
+    div.product-header {
+        font-size: 4.5rem;
+    }
+
+    div.product-description {
+        font-size: 1.5rem;
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-height: 700px) and (orientation: portrait) {
+    div.product-header {
+        font-size: 5rem;
+    }
+
+    div.product-description {
+        font-size: 1.6rem;
+        width: 85%;
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-height: 800px) and (orientation: portrait) {
+    div.product-header {
+        font-size: 5rem;
+    }
+
+    div.product-description {
+        line-height: 160%;
+    }
+
+    div.product-features-container div.product-features {
+        padding-top: 25px;
+        line-height: 150%;
+    }
+}
+
+@media (min-width: 700px) and (min-height: 800px) {
+    div.product-header {
+        font-size: 7rem;
+    }
+
+    div.product-description {
+        line-height: 160%;
+        font-size: 2.2rem;
+    }
+
+    div.product-features-container div.product-features {
+        padding-top: 25px;
+        line-height: 150%;
+        font-size: 2rem;
+    }
+
+    div.product-img{
+        margin-bottom: 15vh;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 1200px) {
+    div.product-header {
+        font-size: 9rem;
+    }
+
+    div.product-description {
+        font-size: 3rem;
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 2.5rem;
+    }
+
+    div.product-img{
+        margin-bottom: 15vh;
+    }
+}
+
+@media (orientation: landscape) {
+    div.product-img {
+        width: 50%;
+        min-width: 50%;
+    }
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-80%);
+    }
+
+    div.product-features-container {
+        transform: translateY(-160%);
+    }
+}
+
+@media (min-height: 345px) and (orientation: landscape) {
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-80%);
+    }
+
+    div.product-features-container {
+        transform: translateY(-120%);
+    }
+}
+
+@media (min-height: 376px) and (orientation: landscape) {
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-100%);
+        font-size: 1.4rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-80%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-height: 360px) and (min-width: 800px) and (orientation: landscape) {
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-100%);
+        font-size: 1.4rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-80%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-height: 700px) and (orientation: landscape) {
+
+    div.product-header {
+        font-size: 9rem;
+    }
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-60%);
+        font-size: 2.5rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-130%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 2rem;
+    }
+}
+
+@media (min-height: 1000px) and (orientation: landscape) {
+
+    div.product-header {
+        font-size: 9rem;
+    }
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-100%);
+        font-size: 3rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-150%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+
+    div.product-header {
+        font-size: 9rem;
+    }
+
+    div.product-img {
+        min-width: 320px;
+        max-height: 30%;
+        max-width: 600px;
+    }
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-70%);
+        font-size: 2.5rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-130%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 2rem;
+        flex-grow: 2;
+        max-width: 320px;
+    }
+
+    div.product-spec {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1250px) and (orientation: landscape) {
+
+    div.product-header {
+        font-size: 9rem;
+    }
+
+    div.product-img {
+        min-width: 320px;
+        max-height: 30%;
+        max-width: 600px;
+    }
+
+    div.product-description {
+        width: 50%;
+        transform: translateY(-70%);
+        font-size: 2.5rem;
+    }
+
+    div.product-features-container {
+        transform: translateY(-90%);
+    }
+
+    div.product-features-container div.product-features {
+        font-size: 2rem;
+        flex-grow: 2;
+        max-width: 320px;
+    }
+
+    div.product-spec {
+        display: block;
+        font-size: 1.5rem;
+    }
+}

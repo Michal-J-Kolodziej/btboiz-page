@@ -129,3 +129,8 @@ body{
 .nsp-dot-title.active {
     opacity: 1;
 }
+
+/* nsp-link */
+[data-nsp-link] {
+    cursor: pointer;
+}

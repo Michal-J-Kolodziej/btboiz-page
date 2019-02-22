@@ -289,7 +289,7 @@ div.home-footer-container div.scroll-down::after {
     }
 
 
-    div.home-header-container div.lang, div.home-header-container div.logo, div.home-footer-container div.nav-container div.nav-text {
+    div.home-header-container div.lang, div.home-footer-container div.nav-container div.nav-text {
         cursor: pointer;
     }
 }

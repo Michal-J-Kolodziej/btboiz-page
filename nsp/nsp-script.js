@@ -1,5 +1,5 @@
 const conf = {
-    offsetTime: 1000, //A number of miliseconds that you have to wait to scroll page again
+    offsetTime: 1500, //A number of miliseconds that you have to wait to scroll page again
 
     //Change 'true' to 'false' if u don't want one of these option of scrolling to be active
     canScrollWithKey: true,
@@ -51,6 +51,7 @@ const sectionsNode = document.querySelectorAll('.nsp-container-stacked, .nsp-con
 let sections = [...sectionsNode]; //changing array of node section objects to an array of js objects
 const dotsNode = document.querySelectorAll('.nsp-dot'); //collecting all dots(website-navigation) from DOM
 let dots = [...dotsNode]; //changing array of node dot objects to an array of js objects
+const nspLinks = [...document.querySelectorAll('[data-nsp-link]')]; //collecting all node objects which have 'data-nsp-link' in it and changing them to js objects
 
 // After refreshing page it automatically scrolls to top
 window.onbeforeunload = function () {
@@ -210,6 +211,19 @@ else {
             });
 
         }
+    });
+
+    // To each nsp-link adding a function that changes the section to target section specified in 'data-nsp-link'
+    nspLinks.forEach(element => {
+        element.addEventListener('click', (e) => {
+            if (canBeDone) {
+                clicked = true;
+                targetDot = e.target.dataset.nspLink - 1;
+                toggleDots(targetDot);
+                canBeDone = false;
+                resolveAfterSomeTime()
+            }
+        });
     });
 
 

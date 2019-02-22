@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&subset=latin-ext');
 /* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+/* font-family: 'Playfair Display', serif; */
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -87,7 +89,7 @@ div.home-photo-container div.text {
     transform: translate(-50%, -50%);
     font-size: 4rem;
     color: #ECECEC;
-    font-weight: 400;
+    font-family: 'Playfair Display', serif;
 }
 
 /* -------- */

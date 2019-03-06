@@ -857,7 +857,7 @@ div.about-text-container div.text {
     }
 
     div.about-text-container div.text {
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 15px 50px;
     }
 
@@ -866,12 +866,12 @@ div.about-text-container div.text {
 @media (min-height: 1250px) {
 
     div.about-text-container div.header {
-        font-size: 10rem;
+        font-size: 9rem;
         padding: 25px;
     }
 
     div.about-text-container div.text {
-        font-size: 5.2rem;
+        font-size: 3rem;
         padding: 15px 65px;
     }
 
@@ -880,12 +880,12 @@ div.about-text-container div.text {
 @media (min-height: 1000px) and (orientation: landscape) {
 
     div.about-text-container div.header {
-        font-size: 10rem;
+        font-size: 9rem;
         padding: 20px;
     }
 
     div.about-text-container div.text {
-        font-size: 5rem;
+        font-size: 3.5rem;
         padding: 15px 70px;
     }
 

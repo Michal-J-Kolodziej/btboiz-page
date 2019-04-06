@@ -439,8 +439,8 @@ div.lang-list-container div.lang-list-item i {
 /*  Second section */
 
 section.product-container {
-    background-color: #EEEEEE;
-    
+    /* background-color: #EEEEEE; */
+    background-color: #E3E3E3;
 }
 
 div.product-container-flex {
@@ -491,7 +491,7 @@ div.product-desc-container {
 
 div.product-desc-container div.product-desc {
     color: #636268;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 150%;
     text-align: left;
     padding: 5px;
@@ -502,14 +502,31 @@ div.product-desc-container div.product-list-1 {
     flex-basis: 45%;
     color: #636268;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 div.product-desc-container div.product-list-2 {
     flex-basis: 45%;
     color: #636268;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+}
+
+div.product-desc-container div.product-buy {
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #75757a;
+    font-size: 1.5rem;
+    color: #636268;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.product-desc-container div.product-buy span.product-prize {
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 @media (min-height: 600px) {
@@ -519,15 +536,15 @@ div.product-desc-container div.product-list-2 {
     }
 
     div.product-desc-container div.product-desc {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     div.product-desc-container div.product-list-1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     div.product-desc-container div.product-list-2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -538,15 +555,15 @@ div.product-desc-container div.product-list-2 {
     }
 
     div.product-desc-container div.product-desc {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     div.product-desc-container div.product-list-1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     div.product-desc-container div.product-list-2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -557,15 +574,15 @@ div.product-desc-container div.product-list-2 {
     }
 
     div.product-desc-container div.product-desc {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     
     div.product-desc-container div.product-list-1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     div.product-desc-container div.product-list-2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -586,6 +603,15 @@ div.product-desc-container div.product-list-2 {
     div.product-desc-container div.product-list-2 {
         font-size: 2.2rem;
     }
+
+    div.product-desc-container div.product-buy {
+        
+        font-size: 2rem;
+    }
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-height: 1300px) {
@@ -604,6 +630,15 @@ div.product-desc-container div.product-list-2 {
     
     div.product-desc-container div.product-list-2 {
         font-size: 2.7rem;
+    }
+
+    div.product-desc-container div.product-buy {
+        
+        font-size: 2.3rem;
+    }
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 1.8rem;
     }
 }
 
@@ -663,6 +698,17 @@ div.product-desc-container div.product-list-2 {
     }
 }
 
+@media (min-width: 500px) and (orientation: landscape) {
+    div.product-desc-container div.product-buy {
+        font-size: 0.9rem;
+        padding: 5px 20px;
+    }
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 0.6rem;
+    }
+}
+
 @media (min-width: 700px) and (orientation: landscape) {
 
     div.product-img-container div.product-specs {
@@ -683,6 +729,15 @@ div.product-desc-container div.product-list-2 {
     
     div.product-desc-container div.product-list-2 {
         font-size: 1rem;
+    }
+
+    div.product-desc-container div.product-buy {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+    }
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 0.8rem;
     }
 }
 
@@ -707,12 +762,32 @@ div.product-desc-container div.product-list-2 {
     div.product-desc-container div.product-list-2 {
         font-size: 1.5rem;
     }
+
+    div.product-desc-container div.product-buy {
+        font-size: 1.7rem;
+        padding: 15px 30px;
+        transition: 0.2s;
+    }
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1100px) and (orientation: landscape) {
+    div.product-img-container div.product-img {
+        background-image: url('img/product_gif.gif');
+    }
+
+    div.product-desc-container div.product-buy:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media (min-width: 1300px) and (orientation: landscape) {
 
     div.product-img-container div.product-specs {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     div.product-header-container {
@@ -720,38 +795,52 @@ div.product-desc-container div.product-list-2 {
     }
 
     div.product-desc-container div.product-desc {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
     
     div.product-desc-container div.product-list-1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     div.product-desc-container div.product-list-2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
+
+    div.product-desc-container div.product-buy {
+        font-size: 2rem;
+        padding: 15px 30px;
+        
+    }
+
+    
+    
+    div.product-desc-container div.product-buy span.product-prize {
+        font-size: 1.7rem;
+    }
+
+    
 }
 
 @media (min-width: 1600px) and (orientation: landscape) {
 
     div.product-img-container div.product-specs {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     div.product-header-container {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     div.product-desc-container div.product-desc {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     
     div.product-desc-container div.product-list-1 {
-        font-size: 2.3rem;
+        font-size: 1.9rem;
     }
     
     div.product-desc-container div.product-list-2 {
-        font-size: 2.3rem;
+        font-size: 1.9rem;
     }
 }
 

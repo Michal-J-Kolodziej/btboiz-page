@@ -515,8 +515,9 @@ div.product-desc-container div.product-list-2 {
 div.product-desc-container div.product-buy {
     margin: 0 auto;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 25px;
     border: 1px solid #75757a;
+    background-color: rgb(211, 211, 211);
     font-size: 1.5rem;
     color: #636268;
     font-weight: 600;
@@ -780,7 +781,7 @@ div.product-desc-container div.product-buy span.product-prize {
     }
 
     div.product-desc-container div.product-buy:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 }
 
@@ -808,7 +809,7 @@ div.product-desc-container div.product-buy span.product-prize {
 
     div.product-desc-container div.product-buy {
         font-size: 2rem;
-        padding: 15px 30px;
+        padding: 10px 60px;
         
     }
 

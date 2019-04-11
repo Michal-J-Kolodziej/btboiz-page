@@ -516,8 +516,8 @@ div.product-desc-container div.product-buy {
     margin: 0 auto;
     padding: 10px 30px;
     border-radius: 25px;
-    border: 1px solid #75757a;
-    background-color: rgb(211, 211, 211);
+    border: 2px solid rgb(252, 185, 42);
+    background-color: rgb(255, 184, 53);
     font-size: 1.5rem;
     color: #636268;
     font-weight: 600;

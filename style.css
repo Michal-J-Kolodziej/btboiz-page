@@ -32,7 +32,7 @@ div.home-header-container {
 div.home-header-container div.logo {
     height: 50px;
     width: 50px;
-    background-image: url('img/logoBoiz.svg');
+    background-image: url('img/logoBoiz-svg.png');
     background-size: cover;
 }
 
@@ -77,7 +77,7 @@ div.home-photo-container div.photo {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('img/home-photo.jpeg');
+    background-image: url('img/home-photo.jpg');
     background-size: cover;
     background-position: center center;
 }
